@@ -12,10 +12,11 @@ struct RoomRow: View {
     
     var body: some View {
         HStack {
-            // 대표 사진 들어갈 곳
-            if room.rentFee == 0 {
+            Text("대표\n사진")// 대표 사진 들어갈 곳
+            Spacer()
+            if room.rentFee == 0 { // 전세인 경우 월세 미출력
                 Text(room.rentType + " \(room.deposit)")
-            } else {
+            } else { // 월세인 경우
                 Text(room.rentType + " \(room.deposit)" + "/\(room.rentFee)")
             }
             

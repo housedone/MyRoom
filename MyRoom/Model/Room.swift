@@ -69,6 +69,11 @@ struct Room: Hashable, Codable, Identifiable {
         var rentCar: Bool
     } // 집 주변 정보 (코인세탁소, 편의점, 대형마트, 백화점, PC방, 카페, 패스트푸드, 쏘카존/그린카존)
 
+    private var imageName: String
+    var image: Image {
+        Image(imageName)
+    }
+    
     private var coordinates: Coordinates
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
@@ -76,6 +81,10 @@ struct Room: Hashable, Codable, Identifiable {
             longitude: coordinates.longitude    // 경도
         )
     }
+    
+//    var swipeImage: Image? {
+//        isFeatured ? Image(imageName + "_feature") : nil
+//    }
     
     struct Coordinates: Hashable, Codable {
         var latitude: Double

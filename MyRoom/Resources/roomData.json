@@ -1,6 +1,7 @@
 [
     {
         "id": 1001,
+        "imageName" : "1001_001",
         "roomType": "원룸",
         "rentType": "월세",
         "deposit": 300,
@@ -60,6 +61,7 @@
     },
     {
         "id": 1002,
+        "imageName": "1002_001",
         "roomType": "투룸",
         "rentType": "전세",
         "deposit": 10000,

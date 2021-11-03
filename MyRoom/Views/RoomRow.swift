@@ -12,7 +12,9 @@ struct RoomRow: View {
     
     var body: some View {
         HStack {
-            Text("대표\n사진")// 대표 사진 들어갈 곳
+            room.image
+                .resizable()
+                .frame(width: 100, height: 100)
             Spacer()
             if room.rentFee == 0 { // 전세인 경우 월세 미출력
                 Text(room.rentType + " \(room.deposit)")
@@ -24,7 +26,6 @@ struct RoomRow: View {
             Text(room.address)
                 .foregroundColor(.secondary)
         }
-        .padding()
     }
 }
 

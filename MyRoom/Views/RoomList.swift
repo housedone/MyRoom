@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct RoomList: View {
+    @State var showComposer: Bool = false
+    
     var body: some View {
         NavigationView {
             List(rooms) { room in
@@ -18,7 +20,24 @@ struct RoomList: View {
                 }
             }
             .navigationTitle("방문한 집")
+            .navigationBarItems(trailing: ModalButton(show: $showComposer))
+            .sheet(isPresented: $showComposer, content: {
+                AddRoom(showComposer: self.$showComposer)
+            })
         }
+    }
+}
+
+
+fileprivate struct ModalButton: View {
+    @Binding var show: Bool
+    
+    var body: some View {
+        Button(action: {
+            self.show = true
+        }, label: {
+            Image(systemName: "plus")
+        })
     }
 }
 

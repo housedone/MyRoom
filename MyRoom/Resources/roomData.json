@@ -1,0 +1,55 @@
+[
+    {
+        "roomType": "원룸"
+        "rentType": "전세"
+        "rentFee": 30
+        "deposit": 300
+        "isShortTerm": false
+        "floorNum": 5
+        "buildNum": 8
+        "memo": "학교까지 지름길로 10분정도면 갈 수 있어서 매력이 있다. 친구도 근처에 사는 등 어쩌구 저쩌구 뭔가 이렇게까지 길게 쓰진 않을듯"
+        "isParking": 1
+        "isElevator": false
+        "windowDir": "북"
+        "completionDate": 1996
+        "ableDate": "2021-11-03"
+        "address": "서울시 구로구 신도림로56-13 806-2103"
+        "estateNum": "010-7799-4229"
+        "url": ""
+        "manageFee": {
+            "electric": true
+            "gas": true
+            "water": true
+            "internet": true
+            "tv": true
+            "parkFee": true
+        }
+        "builtIn": {
+            "airCon": true
+            "refrigerator": true
+            "washer": true
+            "gasRange": true
+            "desk": true
+            "bed": true
+            "closet": true
+            "shoeCloset": true
+            "sink": true
+            "microwave": true
+            "tub": true
+        }
+        "nearHome": {
+            "laundry": true
+            "convenience": true
+            "mart": true
+            "department": true
+            "pcRoom": true
+            "cafe": true
+            "fastFood": true
+            "rentCar": true
+        }
+        "coordinates": {
+            "latitude" : 37.45528,
+            "longitude": 126.63748
+        }
+    }
+]

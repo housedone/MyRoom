@@ -10,21 +10,9 @@ import SwiftUI
 import CoreLocation
 
 struct Room: Hashable, Codable {
-    var roomType: RoomType
-    enum RoomType: String, CaseIterable, Codable {
-        case oneroom = "원룸"
-        case tworoom = "투룸"
-        case officetel = "오피스텔"
-    }
-    
-    var rentType: RentType
-    enum RentType: String, CaseIterable, Codable {
-        case year = "전세"
-        case month = "월세"
-        case trade = "매매"
-    }
-    
-    var id: Int
+    //var id: Int
+    var roomType: String
+    var rentType: String
     var rentFee: Int        // 월세 또는 전세금
     var deposit: Int        // 보증금
     var isShortTerm: Bool     // 단기임대 가능여부 (true, false)
@@ -42,11 +30,39 @@ struct Room: Hashable, Codable {
     var estateNum: String       // 부동산 전화번호
     var url: String             // 어플에서 찾은 매물정보 URL
     
-    var manageFee: Set<String>  // 관리비 포함항목 (전기, 가스, 수도, 인터넷, TV, 주차료 / 복수선택 가능)
+    struct ManageFee: Hashable, Codable {
+        var electric: Bool
+        var gas: Bool
+        var water: Bool
+        var internet: Bool
+        var tv: Bool
+        var parkFee: Bool
+    } // 관리비 포함항목 (전기, 가스, 수도, 인터넷, TV, 주차료 / 복수선택 가능)
     
-    var builtIn: Set<String>    // 빌트인 (에어컨, 냉장고, 세탁기, 인덕션/가스레인지, 책상, 침대, 옷장, 신발장, 싱크대, 전자레인지, 욕조 / 복수선택 가능)
+    struct BuiltIn: Hashable, Codable {
+        var airCon: Bool
+        var refrigerator: Bool
+        var washer: Bool
+        var gasRange: Bool
+        var desk: Bool
+        var bed: Bool
+        var closet: Bool
+        var shoeCloset: Bool
+        var sink: Bool
+        var microwave: Bool
+        var tub: Bool
+    } // 빌트인 (에어컨, 냉장고, 세탁기, 인덕션/가스레인지, 책상, 침대, 옷장, 신발장, 싱크대, 전자레인지, 욕조 / 복수선택 가능)
     
-    var nearHome: Set<String>   // 집 주변 정보 (코인세탁소, 편의점, 대형마트, 백화점, PC방, 카페, 패스트푸드, 쏘카존/그린카존)
+    struct NearHome: Hashable, Codable {
+        var laundry: Bool
+        var convenience: Bool
+        var mart: Bool
+        var department: Bool
+        var pcRoom: Bool
+        var cafe: Bool
+        var fastFood: Bool
+        var rentCar: Bool
+    } // 집 주변 정보 (코인세탁소, 편의점, 대형마트, 백화점, PC방, 카페, 패스트푸드, 쏘카존/그린카존)
 
     private var coordinates: Coordinates
     var locationCoordinate: CLLocationCoordinate2D {

@@ -17,7 +17,7 @@
 		719F49E52732BC4A009475F8 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719F49E42732BC4A009475F8 /* Room.swift */; };
 		719F49E72732C16C009475F8 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719F49E62732C16C009475F8 /* ModelData.swift */; };
 		719F49EB2732CA34009475F8 /* RoomRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719F49EA2732CA34009475F8 /* RoomRow.swift */; };
-		719F49ED2732D183009475F8 /* roomData.json in Resources */ = {isa = PBXBuildFile; fileRef = 719F49EC2732D183009475F8 /* roomData.json */; };
+		71BA88602732E93F00DF9594 /* roomData.json in Resources */ = {isa = PBXBuildFile; fileRef = 71BA885F2732E93F00DF9594 /* roomData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,7 @@
 		719F49E42732BC4A009475F8 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		719F49E62732C16C009475F8 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		719F49EA2732CA34009475F8 /* RoomRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomRow.swift; sourceTree = "<group>"; };
-		719F49EC2732D183009475F8 /* roomData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = roomData.json; sourceTree = "<group>"; };
+		71BA885F2732E93F00DF9594 /* roomData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = roomData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +115,7 @@
 		719F49E92732C9C7009475F8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				719F49EC2732D183009475F8 /* roomData.json */,
+				71BA885F2732E93F00DF9594 /* roomData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				719F49ED2732D183009475F8 /* roomData.json in Resources */,
+				71BA88602732E93F00DF9594 /* roomData.json in Resources */,
 				7118FB3E272B91C00092C912 /* Preview Assets.xcassets in Resources */,
 				7118FB3B272B91C00092C912 /* Assets.xcassets in Resources */,
 			);

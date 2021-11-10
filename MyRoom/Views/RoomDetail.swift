@@ -30,6 +30,7 @@ struct RoomDetail: View {
                 HStack {
                     Text(room.memo) // 메모
                         .font(.subheadline)
+                        .lineLimit(2) // 최대 2줄
                     Spacer()
                     VStack {
                         Spacer()

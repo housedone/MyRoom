@@ -11,7 +11,6 @@
 		7118FB39272B91BF0092C912 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7118FB38272B91BF0092C912 /* ContentView.swift */; };
 		7118FB3B272B91C00092C912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7118FB3A272B91C00092C912 /* Assets.xcassets */; };
 		7118FB3E272B91C00092C912 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7118FB3D272B91C00092C912 /* Preview Assets.xcassets */; };
-		711C855827329F6C00F6F01A /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711C855727329F6C00F6F01A /* PageViewController.swift */; };
 		712290132733209F00445863 /* AddRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712290122733209F00445863 /* AddRoom.swift */; };
 		715C3F7E2732F93A0030714E /* RoomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715C3F7D2732F93A0030714E /* RoomList.swift */; };
 		715C3F802732FA920030714E /* RoomDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715C3F7F2732FA920030714E /* RoomDetail.swift */; };
@@ -30,7 +29,6 @@
 		7118FB38272B91BF0092C912 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7118FB3A272B91C00092C912 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7118FB3D272B91C00092C912 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		711C855727329F6C00F6F01A /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		712290122733209F00445863 /* AddRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoom.swift; sourceTree = "<group>"; };
 		715C3F7D2732F93A0030714E /* RoomList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomList.swift; sourceTree = "<group>"; };
 		715C3F7F2732FA920030714E /* RoomDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetail.swift; sourceTree = "<group>"; };
@@ -91,20 +89,11 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		711C855627329F5900F6F01A /* PageView */ = {
-			isa = PBXGroup;
-			children = (
-				711C855727329F6C00F6F01A /* PageViewController.swift */,
-			);
-			path = PageView;
-			sourceTree = "<group>";
-		};
 		716A902F2732A01F0030ED73 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				7118FB38272B91BF0092C912 /* ContentView.swift */,
 				719F49E02732B833009475F8 /* MapView.swift */,
-				711C855627329F5900F6F01A /* PageView */,
 				719F49E22732B9D4009475F8 /* RoomDetailInfo.swift */,
 				719F49EA2732CA34009475F8 /* RoomRow.swift */,
 				715C3F7D2732F93A0030714E /* RoomList.swift */,
@@ -204,7 +193,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				715C3F822732FDC10030714E /* RoomSimpleInfo.swift in Sources */,
-				711C855827329F6C00F6F01A /* PageViewController.swift in Sources */,
 				712290132733209F00445863 /* AddRoom.swift in Sources */,
 				719F49E32732B9D4009475F8 /* RoomDetailInfo.swift in Sources */,
 				719F49E52732BC4A009475F8 /* Room.swift in Sources */,

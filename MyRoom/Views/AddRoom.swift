@@ -11,13 +11,19 @@ struct AddRoom: View {
     
     @Binding var showComposer: Bool
     
-    var room: Room? = nil
+    @State var room: Room? = nil
     
     @State private var roomType: RoomType = .원룸
     enum RoomType: String, CaseIterable { case 원룸, 투룸, 오피스텔 }
     
     @State private var rentType: RentType = .월세
     enum RentType: String, CaseIterable { case 월세, 전세, 매매 }
+    
+    @State private var rentFee = ""
+    @State private var deposit = ""
+    @State private var manageFee = ""
+    @State private var parkingFee = ""
+    @State private var isShortTerm: Bool = false
     
     var body: some View {
         NavigationView {
@@ -46,15 +52,44 @@ struct AddRoom: View {
                     UISegmentedControl.appearance().selectedSegmentTintColor = .systemCyan
                 }
                 
-//                HStack {
-//                    Text("월세")
-//                    TextField("금액 입력", text: $rentFee)
-//                }
+                HStack {
+                    Text("월세")
+                    TextField("금액 입력", text: $rentFee)
+                        .keyboardType(.phonePad)
+                        .multilineTextAlignment(.trailing)
+                }
+                
+                HStack {
+                    Text("보증금 또는 전세금")
+                    TextField("금액 입력", text: $deposit)
+                        .keyboardType(.phonePad)
+                        .multilineTextAlignment(.trailing)
+                }
+                
+                HStack {
+                    Text("관리비")
+                    TextField("금액 입력", text: $manageFee)
+                        .keyboardType(.phonePad)
+                        .multilineTextAlignment(.trailing)
+                }
+                
+                HStack {
+                    Text("주차비")
+                    TextField("금액 입력", text: $parkingFee)
+                        .keyboardType(.phonePad)
+                        .multilineTextAlignment(.trailing)
+                }
+                
+                Toggle(isOn: $isShortTerm) {
+                    Text("단기임대 가능여부")
+                }
                 
                 
                 
+                //Text("AR 촬영 넣을 부분")
             }
-            //            .navigationBarItems(leading: DismissButton(show: $showComposer), trailing: SaveButton(show: $showComposer, content: $content, room: room))
+            .navigationBarTitle( room != nil ? "집 편집" : "집 추가", displayMode: .inline)
+            .navigationBarItems(leading: DismissButton(show: $showComposer), trailing: SaveButton(show: $showComposer, room: room))
         }
         
         
@@ -62,7 +97,8 @@ struct AddRoom: View {
     }
 }
 
-fileprivate struct DismissButton: View { // 취소버튼
+// 취소 버튼 뷰
+fileprivate struct DismissButton: View {
     @Binding var show: Bool
     
     var body: some View {
@@ -74,13 +110,14 @@ fileprivate struct DismissButton: View { // 취소버튼
     }
 }
 
-fileprivate struct SaveButton: View { // 저장버튼
+// 저장 버튼 뷰
+fileprivate struct SaveButton: View {
     @Binding var show: Bool
     
     //    @EnvironmentObject var store: MemoStore
-    @Binding var content: String
     
-    //    var memo: Memo? = nil
+    
+    var room: Room? = nil
     
     var body: some View {
         Button(action: {
@@ -89,7 +126,7 @@ fileprivate struct SaveButton: View { // 저장버튼
             //            } else {
             //                self.store.insert(memo: self.content)
             //            }
-            //            self.show = false
+            self.show = false
         }, label: {
             Text("저장")
         })

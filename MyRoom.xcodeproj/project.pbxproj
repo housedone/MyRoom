@@ -92,9 +92,9 @@
 		716A902F2732A01F0030ED73 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				717370F7273BE1E400E64E41 /* RoomInfo */,
 				7118FB38272B91BF0092C912 /* ContentView.swift */,
 				719F49E02732B833009475F8 /* MapView.swift */,
+				717370F7273BE1E400E64E41 /* RoomInfo */,
 				715C3F7D2732F93A0030714E /* RoomList.swift */,
 				712290122733209F00445863 /* AddRoom.swift */,
 			);
@@ -341,6 +341,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyRoom/Preview Content\"";
+				DEVELOPMENT_TEAM = LW9AR5U74A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "사진 촬영을 위해 카메라 접근 권한을 허용해 주세요.";
@@ -371,6 +372,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyRoom/Preview Content\"";
+				DEVELOPMENT_TEAM = LW9AR5U74A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "사진 촬영을 위해 카메라 접근 권한을 허용해 주세요.";

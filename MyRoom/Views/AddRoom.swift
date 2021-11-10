@@ -10,24 +10,31 @@ import SwiftUI
 struct AddRoom: View {
     
     @Binding var showComposer: Bool
-    @State private var choose = 0
     
     var room: Room? = nil
     
+    @State private var roomType: RoomType = .월세
+    enum RoomType: String, CaseIterable { case 월세, 전세, 매매 }
+    
     var body: some View {
         NavigationView {
-            VStack {
+            Form {
                 Text("사진 추가하는 부분")
+                
                 Text("집의 종류")
-                Picker(selection: $choose, label: Text("집의 종류")) {
-                    ForEach(["월세","전세","매매"], id: \.self) {
-                        Text("\($0)")
+                Picker("집의 종류", selection: $roomType) {
+                    ForEach(RoomType.allCases, id: \.self) {
+                        Text($0.rawValue).tag($0)
                     }
-                    .pickerStyle(WheelPickerStyle())
+                }
+                .pickerStyle(SegmentedPickerStyle())
+                .onAppear {
+                    UISegmentedControl.appearance().selectedSegmentTintColor = .systemCyan
                 }
                 
-                
                 Text("거래 유형")
+                
+                
             }
             //            .navigationBarItems(leading: DismissButton(show: $showComposer), trailing: SaveButton(show: $showComposer, content: $content, room: room))
         }

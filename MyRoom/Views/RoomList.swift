@@ -8,9 +8,28 @@
 import SwiftUI
 
 struct RoomList: View {
+    
     @State var showComposer: Bool = false
     
     var body: some View {
+        ZStack {
+            roomList
+        }
+    }
+    
+    var emptyList: some View {
+        VStack(spacing: 25) {
+            Image(systemName: "archivebox")
+                .renderingMode(.template)
+                //.foregroundColor(.gray.opacity(0.4))
+            Text("기록한 집이 없습니다.")
+                .font(.headline).fontWeight(.medium)
+        }
+        //.frame(maxWidth: .infinity, maxHeight: .infinity)
+        //.background(Color.background)
+    }
+    
+    var roomList: some View {
         NavigationView {
             List(rooms) { room in
                 NavigationLink {
@@ -27,6 +46,8 @@ struct RoomList: View {
         }
     }
 }
+
+
 
 
 fileprivate struct ModalButton: View {

@@ -45,7 +45,7 @@ struct RoomDetail: View {
                 
                 Divider()
                 
-                RoomSimpleInfo(room: rooms[0])
+                RoomSimpleInfo(room: self.room)
                 
                 Divider()
                 
@@ -54,9 +54,8 @@ struct RoomDetail: View {
                 
                 Divider()
                 
-                Text("상세정보")
-                    .font(.title3)
-                RoomDetailInfo(room: rooms[0])
+                
+                RoomDetailInfo(room: self.room)
                 
                 
                 
@@ -78,6 +77,7 @@ struct RoomDetail: View {
             }
             .padding()
         }
+        .navigationBarTitle("집 정보")
     }
 }
 

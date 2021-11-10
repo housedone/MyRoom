@@ -13,8 +13,11 @@ struct AddRoom: View {
     
     var room: Room? = nil
     
-    @State private var roomType: RoomType = .월세
-    enum RoomType: String, CaseIterable { case 월세, 전세, 매매 }
+    @State private var roomType: RoomType = .원룸
+    enum RoomType: String, CaseIterable { case 원룸, 투룸, 오피스텔 }
+    
+    @State private var rentType: RentType = .월세
+    enum RentType: String, CaseIterable { case 월세, 전세, 매매 }
     
     var body: some View {
         NavigationView {
@@ -33,6 +36,21 @@ struct AddRoom: View {
                 }
                 
                 Text("거래 유형")
+                Picker("거래 유형", selection: $rentType) {
+                    ForEach(RentType.allCases, id: \.self) {
+                        Text($0.rawValue).tag($0)
+                    }
+                }
+                .pickerStyle(SegmentedPickerStyle())
+                .onAppear {
+                    UISegmentedControl.appearance().selectedSegmentTintColor = .systemCyan
+                }
+                
+//                HStack {
+//                    Text("월세")
+//                    TextField("금액 입력", text: $rentFee)
+//                }
+                
                 
                 
             }

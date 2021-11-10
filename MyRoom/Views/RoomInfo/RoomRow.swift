@@ -15,17 +15,26 @@ struct RoomRow: View {
             room.image
                 .resizable()
                 .frame(width: 100, height: 100)
+            
             Spacer()
-            if room.rentFee == 0 { // 전세인 경우 월세 미출력
+            
+            VStack(alignment: .leading, spacing: 10) {
+                // 월세인 경우에만 월세 출력
+                room.rentFee == 0 ?
                 Text(room.rentType + " \(room.deposit)")
-            } else { // 월세인 경우
+                    .font(.headline).fontWeight(.medium)
+                :
                 Text(room.rentType + " \(room.deposit)" + "/\(room.rentFee)")
+                    .font(.headline).fontWeight(.medium)
+                
+                Text(room.address)
+                    .foregroundColor(.secondary)
             }
             
             Spacer()
-            Text(room.address)
-                .foregroundColor(.secondary)
+            
         }
+        .frame(height: 100)
     }
 }
 

@@ -17,11 +17,11 @@ struct RoomDetail: View {
                     .resizable()
                     .frame(height: 300)
                 
-                if room.rentFee == 0 { // 전세인 경우 월세 미출력
+                if room.rentFee == 0 {
                     Text(room.rentType + " \(room.deposit)")
                         .font(.title)
                         .fontWeight(.bold)
-                } else { // 월세인 경우
+                } else { // 월세인 경우에만 월세 출력
                     Text(room.rentType + " \(room.deposit)" + "/\(room.rentFee)")
                         .font(.title)
                         .fontWeight(.bold)

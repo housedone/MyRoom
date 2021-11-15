@@ -17,6 +17,7 @@ struct RoomRow: View {
                 .frame(width: 100, height: 100)
             
             Spacer()
+                .frame(width: 50)
             
             VStack(alignment: .leading, spacing: 10) {
                 // 월세인 경우에만 월세 출력

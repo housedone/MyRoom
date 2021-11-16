@@ -25,18 +25,23 @@ struct RoomList: View {
             Text("기록한 집이 없습니다.")
                 .font(.headline).fontWeight(.medium)
         }
-//        .frame(maxWidth: .infinity, maxHeight: .infinity)
-//        .background(Color.background)
+        //        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        //        .background(Color.background)
     }
     
     // 리스트에 표시할 집이 있을 때
     var roomList: some View {
         NavigationView {
-            List(rooms) { room in
-                NavigationLink {
-                    RoomDetail(room: room)
-                } label: {
-                    RoomRow(room: room)
+            List {
+                ForEach(rooms) { room in
+                    NavigationLink {
+                        RoomDetail(room: room)
+                    } label: {
+                        RoomRow(room: room)
+                    }
+                }
+                .onDelete { indexSet in
+                    
                 }
             }
             .navigationTitle("방문한 집")

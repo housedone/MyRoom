@@ -10,7 +10,7 @@ import PhotosUI
 
 struct AddRoom: View {
     
-    @Binding var showComposer: Bool
+    @Binding var showComposer: Bool // RoomList의 showComposer와 연동
     
     @State private var showImagePicker = false
     @State var image: Image? = nil

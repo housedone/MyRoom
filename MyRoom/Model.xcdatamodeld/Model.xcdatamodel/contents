@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="RoomModel" representedClassName="RoomModel" syncable="YES">
+        <attribute name="ableDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="buildNum" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="completionDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="deposit" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="estateNum" optional="YES" attributeType="String"/>
+        <attribute name="excluSpace" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="floorNum" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isElevator" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isHeatingIndiv" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isParking" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isShortTerm" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="manageFee" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="memo" optional="YES" attributeType="String"/>
+        <attribute name="parkingFee" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rentFee" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rentType" optional="YES" attributeType="String"/>
+        <attribute name="roomType" optional="YES" attributeType="String"/>
+        <attribute name="supplySpace" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="url" optional="YES" attributeType="String"/>
+        <attribute name="windowDir" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="RoomModel" positionX="-63" positionY="-18" width="128" height="359"/>
+    </elements>
+</model>

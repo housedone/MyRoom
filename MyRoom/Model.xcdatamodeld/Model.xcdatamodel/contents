@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="RoomModel" representedClassName="RoomModel" syncable="YES">
+    <entity name="RoomModels" representedClassName="RoomModels" syncable="YES">
         <attribute name="ableDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="address" optional="YES" attributeType="String"/>
         <attribute name="buildNum" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
@@ -25,6 +25,6 @@
         <attribute name="windowDir" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="RoomModel" positionX="-63" positionY="-18" width="128" height="359"/>
+        <element name="RoomModels" positionX="-63" positionY="-18" width="128" height="359"/>
     </elements>
 </model>

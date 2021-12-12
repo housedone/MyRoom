@@ -14,8 +14,8 @@
 		712290132733209F00445863 /* AddRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712290122733209F00445863 /* AddRoom.swift */; };
 		713793FD2765E5D5001768D1 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 713793FB2765E5D5001768D1 /* Model.xcdatamodeld */; };
 		7137943E2765E9B2001768D1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137943D2765E9B2001768D1 /* Persistence.swift */; };
-		713794412765FF4B001768D1 /* RoomModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137943F2765FF4B001768D1 /* RoomModel+CoreDataClass.swift */; };
-		713794422765FF4B001768D1 /* RoomModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713794402765FF4B001768D1 /* RoomModel+CoreDataProperties.swift */; };
+		7137944B2766391E001768D1 /* RoomModels+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713794492766391E001768D1 /* RoomModels+CoreDataClass.swift */; };
+		7137944C2766391E001768D1 /* RoomModels+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137944A2766391E001768D1 /* RoomModels+CoreDataProperties.swift */; };
 		715C3F7E2732F93A0030714E /* RoomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715C3F7D2732F93A0030714E /* RoomList.swift */; };
 		715C3F802732FA920030714E /* RoomDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715C3F7F2732FA920030714E /* RoomDetail.swift */; };
 		715C3F822732FDC10030714E /* RoomSimpleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715C3F812732FDC10030714E /* RoomSimpleInfo.swift */; };
@@ -37,8 +37,8 @@
 		712290122733209F00445863 /* AddRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoom.swift; sourceTree = "<group>"; };
 		713793FC2765E5D5001768D1 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		7137943D2765E9B2001768D1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		7137943F2765FF4B001768D1 /* RoomModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoomModel+CoreDataClass.swift"; sourceTree = "<group>"; };
-		713794402765FF4B001768D1 /* RoomModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoomModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		713794492766391E001768D1 /* RoomModels+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoomModels+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7137944A2766391E001768D1 /* RoomModels+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoomModels+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		715C3F7D2732F93A0030714E /* RoomList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomList.swift; sourceTree = "<group>"; };
 		715C3F7F2732FA920030714E /* RoomDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetail.swift; sourceTree = "<group>"; };
 		715C3F812732FDC10030714E /* RoomSimpleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSimpleInfo.swift; sourceTree = "<group>"; };
@@ -65,8 +65,8 @@
 		7118FB2A272B91BF0092C912 = {
 			isa = PBXGroup;
 			children = (
-				7137943F2765FF4B001768D1 /* RoomModel+CoreDataClass.swift */,
-				713794402765FF4B001768D1 /* RoomModel+CoreDataProperties.swift */,
+				713794492766391E001768D1 /* RoomModels+CoreDataClass.swift */,
+				7137944A2766391E001768D1 /* RoomModels+CoreDataProperties.swift */,
 				7118FB35272B91BF0092C912 /* MyRoom */,
 				7118FB34272B91BF0092C912 /* Products */,
 			);
@@ -216,7 +216,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				715C3F822732FDC10030714E /* RoomSimpleInfo.swift in Sources */,
-				713794412765FF4B001768D1 /* RoomModel+CoreDataClass.swift in Sources */,
 				712290132733209F00445863 /* AddRoom.swift in Sources */,
 				719F49E32732B9D4009475F8 /* RoomDetailInfo.swift in Sources */,
 				7137943E2765E9B2001768D1 /* Persistence.swift in Sources */,
@@ -226,10 +225,11 @@
 				715C3F802732FA920030714E /* RoomDetail.swift in Sources */,
 				719F49E12732B833009475F8 /* MapView.swift in Sources */,
 				7172B29A273C27A3001A3640 /* PhotoPicker.swift in Sources */,
+				7137944C2766391E001768D1 /* RoomModels+CoreDataProperties.swift in Sources */,
 				719F49EB2732CA34009475F8 /* RoomRow.swift in Sources */,
+				7137944B2766391E001768D1 /* RoomModels+CoreDataClass.swift in Sources */,
 				7118FB37272B91BF0092C912 /* MyRoomApp.swift in Sources */,
 				713793FD2765E5D5001768D1 /* Model.xcdatamodeld in Sources */,
-				713794422765FF4B001768D1 /* RoomModel+CoreDataProperties.swift in Sources */,
 				719F49E72732C16C009475F8 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

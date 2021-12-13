@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct RoomDetail: View {
+    @State private var showARInteractionView = false
+    
     var room: Room
     
     var body: some View {
@@ -78,7 +80,17 @@ struct RoomDetail: View {
                 // 부동산 번호
                 // 어플에서 찾은 매물정보 URL
                 // AR 촬영 평면도
-                
+                HStack {
+                    Text("가구 배치해보기")
+                    Button(action: {
+                        self.showARInteractionView.toggle()
+                    }, label: {
+                        Image(systemName: "bed.double")
+                    })
+                        .sheet(isPresented: $showARInteractionView) {
+                            //ARInteractionView()
+                        }
+                }
             }
             .padding()
         }

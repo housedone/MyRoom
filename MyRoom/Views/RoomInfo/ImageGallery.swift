@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ImageGallery: View {
-    private var numberOfImages = 5
+    private var numberOfImages = 14
     
     var body: some View {
         GeometryReader { proxy in

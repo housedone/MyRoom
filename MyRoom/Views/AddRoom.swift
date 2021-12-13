@@ -28,6 +28,11 @@ struct AddRoom: View {
     @State private var manageFee = ""
     @State private var parkingFee = ""
     @State private var isShortTerm: Bool = false
+    @State private var excluSpace = ""
+    @State private var supplySpace = ""
+    @State private var floorNum = ""
+    @State private var buildNum = ""
+    @State private var memo = ""
     
     
     var body: some View {
@@ -86,28 +91,28 @@ struct AddRoom: View {
                 Group {
                     HStack {
                         Text("월세")
-                        TextField("금액 입력", value: $rentFee, formatter: NumberFormatter())
+                        TextField("금액", value: $rentFee, formatter: NumberFormatter())
                             .keyboardType(.phonePad)
                             .multilineTextAlignment(.trailing)
                     }
                     
                     HStack {
                         Text("보증금 또는 전세금")
-                        TextField("금액 입력", text: $deposit)
+                        TextField("금액", text: $deposit)
                             .keyboardType(.phonePad)
                             .multilineTextAlignment(.trailing)
                     }
                     
                     HStack {
                         Text("관리비")
-                        TextField("금액 입력", text: $manageFee)
+                        TextField("금액", text: $manageFee)
                             .keyboardType(.phonePad)
                             .multilineTextAlignment(.trailing)
                     }
                     
                     HStack {
                         Text("주차비")
-                        TextField("금액 입력", text: $parkingFee)
+                        TextField("금액", text: $parkingFee)
                             .keyboardType(.phonePad)
                             .multilineTextAlignment(.trailing)
                     }
@@ -115,8 +120,43 @@ struct AddRoom: View {
                     Toggle(isOn: $isShortTerm) {
                         Text("단기임대 가능여부")
                     }
+                    
+                    HStack {
+                        Text("전용면적")
+                        TextField("제곱미터", text: $excluSpace)
+                            .keyboardType(.phonePad)
+                            .multilineTextAlignment(.trailing)
+                    }
+                    
+                    HStack {
+                        Text("공급면적")
+                        TextField("제곱미터", text: $supplySpace)
+                            .keyboardType(.phonePad)
+                            .multilineTextAlignment(.trailing)
+                    }
+                    
+                    HStack {
+                        Text("집 층수")
+                        TextField("숫자", text: $floorNum)
+                            .keyboardType(.phonePad)
+                            .multilineTextAlignment(.trailing)
+                    }
+                    
+                    HStack {
+                        Text("건물 층수")
+                        TextField("숫자", text: $buildNum)
+                            .keyboardType(.phonePad)
+                            .multilineTextAlignment(.trailing)
+                    }
+                    
+                    HStack {
+                        Text("메모")
+                        TextField("", text: $memo)
+                            //.keyboardType(.phonePad)
+                            .multilineTextAlignment(.trailing)
+                    }
                 }
-                //Text("AR 촬영 넣을 부분")
+                
             }
             .navigationBarTitle( room != nil ? "집 편집" : "집 추가", displayMode: .inline)
             .navigationBarItems(

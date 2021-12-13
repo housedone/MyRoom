@@ -1,5 +1,65 @@
 [
     {
+        "id": 2132367605,
+        "imageName" : "2132367605_001",
+        "roomType" : "투룸",
+        "rentType" : "월세",
+        "deposit" : 1000,
+        "rentFee" : 70,
+        "manageFee" : 10,
+        "parkingFee" : 0,
+        "isShortTerm" : false,
+        "excluSpace" : 29.9,
+        "supplySpace" : 64.93,
+        "floorNum" : 7,
+        "buildNum" : 14,
+        "memo" : "투룸 풀옵션 인하대정문앞",
+        "isParking" : 1,
+        "isElevator" : true,
+        "isHeatingIndiv" : true,
+        "windowDir" : "남",
+        "completionDate" : 2019,
+        "ableDate" : "2022-01-20",
+        "address" : "인천 미추홀구 소성로 16",
+        "estateNum" : "032-888-3110",
+        "url" : "",
+        "manageFee" : {
+            "electric": true,
+            "gas" : true,
+            "water" : true,
+            "internet" : true,
+            "tv" : true,
+            "parkFee" : true
+        },
+        "builtIn": {
+            "airCon": true,
+            "refrigerator" : true,
+            "washer" : true,
+            "gasRange" : true,
+            "desk" : true,
+            "bed" : true,
+            "closet" : true,
+            "shoeCloset" : true,
+            "sink" : true,
+            "microwave" : true,
+            "tub" : true
+        },
+        "nearHome": {
+            "laundry": true,
+            "convenience" : true,
+            "mart" : true,
+            "department" : true,
+            "pcRoom" : true,
+            "cafe" : true,
+            "fastFood" : true,
+            "rentCar" : true
+        },
+        "coordinates": {
+            "latitude" : 37.4475727,
+            "longitude" : 126.6523468
+        }
+    },
+    {
         "id": 1001,
         "imageName" : "1001_001",
         "roomType" : "원룸",

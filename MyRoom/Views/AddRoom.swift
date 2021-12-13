@@ -13,6 +13,7 @@ struct AddRoom: View {
     @Binding var showComposer: Bool // RoomList의 showComposer와 연동
     
     @State private var showImagePicker = false
+    @State private var showARKitView = false
     @State var image: Image? = nil
     
     @State var room: Room? = nil
@@ -43,6 +44,18 @@ struct AddRoom: View {
                         .sheet(isPresented: $showImagePicker) {
                             let configuration = PHPickerConfiguration(photoLibrary: PHPhotoLibrary.shared())
                             PhotoPicker(configuration: configuration, isPresented: $showImagePicker)
+                        }
+                }
+                HStack {
+                    Text("방 3D 인식")
+                    Spacer()
+                    Button(action: {
+                        self.showARKitView.toggle()
+                    }, label: {
+                        Image(systemName: "scale.3d")
+                    })
+                        .sheet(isPresented: $showARKitView) {
+                            //ARKitView()
                         }
                 }
                 

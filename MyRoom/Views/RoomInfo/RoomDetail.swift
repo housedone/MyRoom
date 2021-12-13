@@ -12,10 +12,15 @@ struct RoomDetail: View {
     
     var body: some View {
         ScrollView {
+            ImageGallery()
+                .frame(height: 300)
+            
             VStack(alignment: .leading) {
-                room.image
-                    .resizable()
-                    .frame(height: 300)
+                
+                
+//                room.image
+//                    .resizable()
+//                    .frame(height: 300)
                 
                 if room.rentFee == 0 {
                     Text(room.rentType + " \(room.deposit)")
@@ -77,7 +82,9 @@ struct RoomDetail: View {
             }
             .padding()
         }
-        .navigationBarTitle("집 정보")
+        .edgesIgnoringSafeArea(.all)
+        .statusBar(hidden: true)
+        //.navigationBarTitle("집 정보")
     }
 }
 

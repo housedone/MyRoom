@@ -135,8 +135,6 @@
 		7118FB2A272B91BF0092C912 = {
 			isa = PBXGroup;
 			children = (
-				713794492766391E001768D1 /* RoomModels+CoreDataClass.swift */,
-				7137944A2766391E001768D1 /* RoomModels+CoreDataProperties.swift */,
 				7118FB35272B91BF0092C912 /* MyRoom */,
 				7118FB34272B91BF0092C912 /* Products */,
 			);
@@ -213,6 +211,8 @@
 		719F49E82732C9B6009475F8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				713794492766391E001768D1 /* RoomModels+CoreDataClass.swift */,
+				7137944A2766391E001768D1 /* RoomModels+CoreDataProperties.swift */,
 				719F49E62732C16C009475F8 /* ModelData.swift */,
 				719F49E42732BC4A009475F8 /* Room.swift */,
 				7172B299273C27A3001A3640 /* PhotoPicker.swift */,

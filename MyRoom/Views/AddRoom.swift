@@ -60,7 +60,7 @@ struct AddRoom: View {
                         Image(systemName: "scale.3d")
                     })
                         .sheet(isPresented: $showARKitView) {
-                            //ARKitView()
+                            ARKitView()
                         }
                 }
                 
@@ -124,14 +124,12 @@ struct AddRoom: View {
                     HStack {
                         Text("전용면적")
                         TextField("제곱미터", text: $excluSpace)
-                            .keyboardType(.phonePad)
                             .multilineTextAlignment(.trailing)
                     }
                     
                     HStack {
                         Text("공급면적")
                         TextField("제곱미터", text: $supplySpace)
-                            .keyboardType(.phonePad)
                             .multilineTextAlignment(.trailing)
                     }
                     

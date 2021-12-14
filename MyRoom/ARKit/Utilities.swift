@@ -5,6 +5,7 @@ Abstract:
 Convenience extensions on system types.
 */
 
+import Foundation
 import ARKit
 
 @available(iOS 12.0, *)
